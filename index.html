@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <title>Cadastro de Computadores</title>
+</head>
+
+<body>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="./img/logo.png" />
+                </div>
+                <div class="redes-sociais">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./img/rss.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/face.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/tw.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/linkedin.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SERVIÇOS</a></li>
+                    <li><a href="">PAGINAS</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTATO</a></li>
+                    <li><a href="">SOBRE</a></li>
+                </ul>
+            </div>
+            <div class="busca">
+                <input placeholder="Faça a sua pesquisa" type="text" />
+            </div>
+        </div>
+    </main>
+    <div class="col-100">
+        <div class="slider-principal">
+            <img src="./img/banner.png" />
+            <img src="./img/banner.png" />
+            <img src="./img/banner.png" />
+            <img src="./img/banner.png" />
+
+        </div>
+        <br></br>
+
+    </div>
+
+    <h1>
+        <painel-heading>Cadastro de Computadores
+    </h1>
+
+
+    <form id="locationForm">
+        <fieldset id="usuario">
+            <legend>Identificação do Usuário</legend>
+            <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="30" maxlength="20"
+                    required />
+            </p>
+            <p><label for="cMatricula">Matricula:</label> <input type="password" name="tMatricula" id="cMatricula"
+                    size="15" maxlength="8" placeholder="Somente Numeros" required /></p>
+        </fieldset>
+        <fieldset id="maquina">
+            <legend>Maquina</legend>
+            <p><label for="cModelo">Modelo:</label> <input type="text" name="tModelo" id="cModelo" size="15"
+                    maxlength="10" /></p>
+            <p> <label for="cMarca">Marca da Placa-Mãe:</label> <input type="text" name="tMarca" id="cMarca" size="15"
+                    maxlength="10" />
+            </p>
+            <p><label for="cMemoria">Memoria RAM:</label> <input type="number" name="tMemoria" id="cMemoria" size="10"
+                    maxlength="6" min="0" max="9999999" />
+            </p>
+            <p> <label for="cQuantidade">Quantidade do(s) HD:</label> <input type="number" name="tQuantidade"
+                    id="cQuantidade" size="6" maxlength="6" min="0" max="99999" />
+            </p>
+            <p><label for="cCapacidade">Capacidade do(s) HD:</label> <input type="number" name="tCapacidade"
+                    id="cCapacidade" size="10" maxlength="6" min="0" max="99999" />
+            </p>
+            <p> <label for="cModeloDaFonte">Modelo da Fonte:</label> <input type="text" name="tModeloDaFonte"
+                    id="cModeloDaFonte" size="15" maxlength="10" />
+            </p>
+            </p>
+            <p> <label for="cProcessador">Marca do Processador:</label><select name="tProcessador" id="cProcessador">
+                    <option>Intel</option>
+                    <option>AMD</option>
+                </select>
+            </p>
+
+            <p> <label for="cVelocidadeDoProcessador">Velocidade do Processador:</label> <input type="number"
+                    name="tVelocidadeDoProcessador" id="cVelocidadeDoProcessador" size="10" maxlength="6" min="0"
+                    max="99999" /> </p>
+            </p>
+        </fieldset>
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="Cadastrar"></label>
+            <div class="col-md-8">
+                <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+                <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Limpar</button>
+            </div>
+            <br />
+    </form>
+
+    <hr>
+
+    <form>
+        <fieldset id="Pesquisa">
+            <legend>FILTRO</legend>
+            <p><input type="search" name="tFiltro" id="cFiltro" size="80" maxlength="30">
+
+            </p>
+            <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Pesquisar</button>
+
+        </fieldset>
+    </form>
+
+    <div class="col-100 bloco-logos">
+        <div class="content">
+            <div class="col-4">
+                <img alt="logo" title="logo" src="img/logo1.png" />
+            </div>
+            <div class="col-4">
+                <img alt="logo" title="logo" src="img/logo2.png" />
+            </div>
+            <div class="col-4">
+                <br />
+                <img alt="logo" title="logo" src="img/logo3.png" />
+            </div>
+            <div class="col-4">
+                <img alt="Puma" title="Puma" src="img/logo4.png" />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="col-100 footer">
+            <div class="content">
+                <div class="col-4">
+                    <h3><b>Populr Post</b></h3>
+                    <p>Lorem Ipsum is simply dummy
+                        text of the printing.</p>
+                    <p class="clock">28-Junho 2020<p>
+                            <p>Lorem Ipsum is simply dummy
+                                text of the printing.</p>
+                            <p class="clock">28-Junho 2020<p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Tags</b></h3>
+                    <p>Palavras-chave apps blog blogroll cms coda concerto comida diariamente design diálogo diálogo
+                        divertimento envio design feriado feriado galeria icon ilustração ipad iphone jquery etiqueta
+                        marketing marketing movimento música musica profissão profissão projeto receitas som som
+                        tipografia tv vídeo</p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Um pouco sobre nós</b></h3>
+                    <p>
+                        Talvez você nos conheça pelos nossos Computadores. Mas nós fazemos muito mais. A nossa empresa
+                        inventa ao limite da tecnologia para tornar experiências incríveis possíveis para diversas
+                        empresas e a sociedade e para todas as pessoas da Terra.
+
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Get in touch</b></h3>
+                    <p>
+                        A gente é assim: acreditamos que as conexões trazem novas possibilidades de criar um futuro
+                        melhor. É isso que nos move. E é assim que fazemos a diferença.
+                    </p>
+                    <p class="local">Rio de Janeiro, BR<p>
+                            <p class="emailico">jcsaosh@hotmail.com<p>
+                                    <p class="telefoneico">+55(21) 99373-3006<p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="col-100 footer-2">
+        <div class="content">
+
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            </p>
+        </div>
+    </div>
+    <footer class="footer__container">
+        created by @fellyph
+    </footer>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+
+</html>
